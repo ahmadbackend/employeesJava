@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="emplyees prject setting the scene">
+    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="deeply implementing regex , new switch approach, industrial logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/CEO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Programmer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" afterDir="false" />
     </list>
@@ -34,7 +38,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2KQNCCmjUkSAd34Q0HHiEmMmSPU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,11 +89,19 @@
       <option name="project" value="LOCAL" />
       <updated>1673907250400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deeply implementing regex , new switch approach, industrial logic">
+      <created>1673978732019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673978732019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="emplyees prject setting the scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="emplyees prject setting the scene" />
+    <MESSAGE value="deeply implementing regex , new switch approach, industrial logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="deeply implementing regex , new switch approach, industrial logic" />
   </component>
 </project>
