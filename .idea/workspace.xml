@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="deeply implementing regex , new switch approach, industrial logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/CEO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Programmer.java" afterDir="false" />
+    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="moving on with classes oop, overriding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,12 +93,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673978732019</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moving on with classes oop, overriding">
+      <created>1674075595032</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674075595032</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="emplyees prject setting the scene" />
     <MESSAGE value="deeply implementing regex , new switch approach, industrial logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="deeply implementing regex , new switch approach, industrial logic" />
+    <MESSAGE value="moving on with classes oop, overriding" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving on with classes oop, overriding" />
   </component>
 </project>

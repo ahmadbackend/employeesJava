@@ -9,7 +9,7 @@ public class Main {
         String people = """
             Flinstone, Fred, 1/1/1900, Programmer,  {lcpd=2000,yoe=100,iq=120}
             Rubble, Barney, 2/2/1905, Manager, {orgSize=100,dir=20}
-            Flinstone, Wilma, 3/3/1910, Analyist
+            Flinstone, Wilma, 3/3/1910, Analyist {projectCount=50}
             Rubble, Betty, 4/4/1915, CEO
             """;
 
@@ -32,25 +32,13 @@ public class Main {
                     System.out.println(programmer.toString());
                     yield programmer.getSalary();
                 }
-                case "Manager" -> {
-                    String details= peopleMat.group("details");
-                    Matcher mgrmat= mngrPat.matcher(details);
-                    int salary=0;
-                    if(mgrmat.find()){
-                        int orgSize= Integer.parseInt(mgrmat.group("orgsize"));
-                        int dir= Integer.parseInt(mgrmat.group("dir"));
-                        salary+=35000*orgSize+dir/100;
-                    }else {
-                        salary=35000;
-                    }
-                    yield salary;
-                }
+                case "Manager" -> /*same approach as analyist and programmer*/ 5000;
                 case "Analyist" -> {
-                    yield 5000;
+                    Analyist analyist=new Analyist(peopleMat.group());
+                    System.out.println(analyist.toString());
+                    yield analyist.getSalary();
                 }
-                case "CEO" -> {
-                    yield 100000;
-                }
+                case "CEO" -> 100000;
                 default -> {
                     yield 0;
                 }
