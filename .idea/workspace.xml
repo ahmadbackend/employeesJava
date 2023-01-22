@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="moving on with classes oop, overriding">
+    <list default="true" id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="shoveling code blocks to designated classes to implement interfaces soon">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Analyist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/CEO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/CEO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/emplyoess/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/emplyoess/Programmer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,6 +57,11 @@
     &quot;last_opened_file_path&quot;: &quot;/home/ahmadbasher/Downloads/PeopleMatching.java&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="emplyoess" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="emplyoess.Main" />
@@ -67,17 +79,18 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="" />
       <created>1673902725680</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1673902725680</updated>
+      <updated>1674424892328</updated>
     </task>
     <task id="LOCAL-00001" summary="emplyees prject setting the scene">
       <created>1673907250400</created>
@@ -100,13 +113,22 @@
       <option name="project" value="LOCAL" />
       <updated>1674075595032</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task active="true" id="LOCAL-00004" summary="shoveling code blocks to designated classes to implement interfaces soon">
+      <changelist id="af0fa27b-eb80-4c2f-9848-94897684b8d7" name="Changes" comment="shoveling code blocks to designated classes to implement interfaces soon" />
+      <created>1674266871959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674424892328</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="emplyees prject setting the scene" />
     <MESSAGE value="deeply implementing regex , new switch approach, industrial logic" />
     <MESSAGE value="moving on with classes oop, overriding" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving on with classes oop, overriding" />
+    <MESSAGE value="shoveling code blocks to designated classes to implement interfaces soon" />
+    <option name="LAST_COMMIT_MESSAGE" value="shoveling code blocks to designated classes to implement interfaces soon" />
   </component>
 </project>
