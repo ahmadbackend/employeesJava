@@ -26,31 +26,21 @@ public class Main {
         Pattern coderPat=Pattern.compile(progRex);
         int totalsalaries=0;
         Employee employee=null;
-        while (peopleMat.find()) {
-           employee= switch (peopleMat.group("role")) {
-
-                case "Programmer" ->new Programmer(peopleMat.group());
-
-                case "Manager" -> new Manager(peopleMat.group());
-
-                case "Analyist" -> new Analyist(peopleMat.group());
-
-                case "CEO" -> new CEO(peopleMat.group());
-                default -> new Employee(peopleMat.group());
+        try {
+            while (peopleMat.find()) {
+                employee = Employee.getText(peopleMat.group());
                 /*
-                * if null used  while no match  then toString method will throw
-                * error as trying to point to nowhere.string
-                */
-            };
-            if (employee!=null)
-            {
-                /*
-                * another approach to solve null issue*/
-                totalsalaries+=employee.getSalary();
-                System.out.println(employee.toString());
+                 * if null used  while no match  then toString method will throw
+                 * error as trying to point to nowhere.string
+                 */
+            }
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+
             }
 
-        }
+
         NumberFormat currency=  NumberFormat.getCurrencyInstance();
         System.out.printf("the total amout of  salaries  %s%n",currency.format(totalsalaries));
 
