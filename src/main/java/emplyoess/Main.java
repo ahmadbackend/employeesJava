@@ -44,7 +44,7 @@ public class Main {
             System.out.println(e.getMessage());
 
             }
-totalsalaries+= employee.getSalary();
+        totalsalaries+= employee.getSalary();
 
         NumberFormat currency=  NumberFormat.getCurrencyInstance();
         System.out.printf("the total amout of  salaries  %s%n",currency.format(totalsalaries));
