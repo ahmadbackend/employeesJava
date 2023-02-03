@@ -3,7 +3,7 @@ package emplyoess;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Manager extends Employee{
+public class Manager extends Employee implements IFemployee{
 
     private int dir =0;
     private int orgSize=0;

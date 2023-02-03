@@ -17,6 +17,14 @@ public abstract class  Employee  {
    protected String firstName;
    protected LocalDate dob;
    DateTimeFormatter dtformat = DateTimeFormatter.ofPattern("M/d/yyyy");
+   protected Employee()
+   {
+       peopleMat=null;
+       firstName="NA";
+       lastName="NA";
+       dob=null;
+
+   }
 
    public Employee(String person) {
       peopleMat =Employee.peoplePat.matcher(person);
@@ -27,9 +35,8 @@ public abstract class  Employee  {
       }
    }
 
-   public abstract int getSalary();
 
-   public static final Employee getText (String personText)throws Exception {
+   public static final IFemployee getText (String personText)throws Exception {
        Matcher peopleMat= peoplePat.matcher (personText);
        if(peopleMat.find())
        {
@@ -42,13 +49,24 @@ public abstract class  Employee  {
                case "Analyist" -> new Analyist(personText);
 
                case "CEO" -> new CEO(personText);
+               default -> ()->0;
+               };
 
-           };
-       }
-       else
-       {
+           }
+
+       else{
            //practicing exceptions
-           throw new Exception("emplye category not known kindly check the staff category");
+          return  ()->0;
+           // or new Dumby(); needs interface to implement lambda  JAVA Creates an object then search
+           /*for  method signature that match labda signature which needs interface with a single method
+           that match this signature and implemented in our class
+           * */
+       }
+   }
+   private static final class Dumby extends Employee implements IFemployee{
+       @Override
+       public int getSalary() {
+           return 0;
        }
    }
 
@@ -57,4 +75,6 @@ public abstract class  Employee  {
          return String.format("%s,  %s: %S%n", lastName, firstName, money.format(getSalary()));
 
       }
-   }
+    public abstract int getSalary();
+
+}

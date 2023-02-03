@@ -1,8 +1,8 @@
 package emplyoess;
 
-import javax.swing.*;
 import java.text.NumberFormat;
-import java.util.Optional;
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,13 +19,18 @@ public class Main {
         Pattern peoplePat = Pattern.compile(peopleRegex);
         Matcher peopleMat = peoplePat.matcher(people);
 
-        String mngrRex="\\w+=(?<orgsize>\\w+),\\w+=(?<dir>\\w+)";
-        Pattern mngrPat=Pattern.compile(mngrRex);
+
 
         String progRex="\\w+=(?<locpd>\\w+),\\w+=(?<yoe>\\w+),\\w+=(?<iq>\\w+)";
-        Pattern coderPat=Pattern.compile(progRex);
+         Ipilot Pillot= new CEO("");
+         Pillot.fly();
+         /*
+         * IT IS NOW A CEO WHO is allowed only to implement methods of Ipilot interface
+         * this technique called composition  very suck method
+         * use CTRL+ALT+B to see method implementation =>method source code
+         * */
         int totalsalaries=0;
-        Employee employee=null;
+        IFemployee employee=null;
         try {
             while (peopleMat.find()) {
                 employee = Employee.getText(peopleMat.group());
@@ -39,11 +44,13 @@ public class Main {
             System.out.println(e.getMessage());
 
             }
-
+totalsalaries+= employee.getSalary();
 
         NumberFormat currency=  NumberFormat.getCurrencyInstance();
         System.out.printf("the total amout of  salaries  %s%n",currency.format(totalsalaries));
+        bunchofbla test= new bunchofbla("ahmad","basher", LocalDate.of(1990, Month.JANUARY,28));
 
+        System.out.println(test.dob());
 
     }
 

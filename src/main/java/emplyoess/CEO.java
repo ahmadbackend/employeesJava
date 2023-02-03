@@ -3,7 +3,8 @@ package emplyoess;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CEO extends Employee{
+public class CEO extends Employee implements IFemployee,Ipilot{
+    public Ipilot Pilot=new pilot(100,true);
 
         private int stockAvgPrice =0;
 
@@ -22,8 +23,25 @@ public class CEO extends Employee{
 
         }
 
+    public void fly() {
+        Pilot.fly();
+    }
 
+    public void setHour(int hour) {
+        Pilot.setHour(hour);
+    }
 
+    public void setCrz(boolean crz) {
+        Pilot.setCrz(crz);
+    }
+
+    public int getHour() {
+        return Pilot.getHour();
+    }
+
+    public boolean isCrz() {
+        return Pilot.isCrz();
+    }
 
     public int getSalary()
     {
